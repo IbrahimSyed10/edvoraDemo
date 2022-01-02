@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edvora"
+            android:fontFamily="@font/sfprodisplay_bold"
+            android:textColor="#DEFFFFFF"
+            android:textSize="@dimen/_34sdp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            >
+
+            <carbon.widget.TextView
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="wrap_content"
+                android:background="@color/background_dark_color"
+                android:clickable="true"
+                android:drawableEnd="@drawable/down_arrow"
+                android:fontFamily="@font/sfprodisplay_regular"
+                android:gravity="left|center"
+                android:paddingLeft="@dimen/_15sdp"
+                android:id="@+id/filter_spinner"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:text="Filters"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:carbon_cornerRadius="@dimen/_6sdp"
+                app:carbon_rippleColor="@color/white" />
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:background="@color/background_dark_color"
+                android:fontFamily="@font/sfprodisplay_regular"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="clear filter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:carbon_cornerRadius="@dimen/_6sdp" />
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler"
+            android:clipToPadding="false"
+            tools:listitem="@layout/item_parent_recycler"
+            android:paddingTop="@dimen/_14sdp"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/white"
+        />
+
+</RelativeLayout>

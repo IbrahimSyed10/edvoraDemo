@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_color"
+    android:layout_marginTop="@dimen/_8sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <carbon.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/title"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:fontFamily="@font/sfprodisplay_regular"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="Shoes"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+       />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="#80CBCBCB"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="wrap_content"
+       android:id="@+id/recycler"
+       android:layout_height="wrap_content"/>
+
+</LinearLayout>

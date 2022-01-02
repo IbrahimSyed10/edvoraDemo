@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_160sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    app:carbon_cornerRadius="@dimen/_11sdp"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/_30sdp"
+    android:paddingBottom="@dimen/_30sdp"
+    android:orientation="vertical">
+
+    <AutoCompleteTextView
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:id="@+id/products"
+        android:textColor="@color/white"
+        android:background="@drawable/item_spinner"
+        android:hint="Products"
+        android:textColorHint="@color/white"
+        android:drawableEnd="@drawable/down_arrow" />
+
+
+    <AutoCompleteTextView
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:id="@+id/states"
+        android:paddingLeft="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:background="@drawable/item_spinner"
+        android:hint="State"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColorHint="@color/white"
+        android:drawableEnd="@drawable/down_arrow" />
+
+
+
+    <AutoCompleteTextView
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:id="@+id/cities"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/item_spinner"
+        android:hint="City"
+        android:textColorHint="@color/white"
+        android:drawableEnd="@drawable/down_arrow" />
+
+</carbon.widget.LinearLayout>
